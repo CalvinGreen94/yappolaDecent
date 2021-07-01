@@ -61,14 +61,14 @@ def wishMe():
     else:
         speak("Good Evening!") 
   
-    assname =("Daisy 1 point o")
+    assname =("Yappola 1 point o")
     speak("I am your Virtual  Assistant")
     speak(assname)
     return redirect('command.html')
 def usrname():
     speak("What should i call you")
     uname = takeCommand()
-    speak("Welcome Mister")
+    speak("Welcome ")
     speak(uname)
     columns = shutil.get_terminal_size().columns
      
