@@ -67,7 +67,7 @@ def wishMe():
 def usrname():
     speak("What should i call you")
     uname = takeCommand()
-    speak("Welcome Mister")
+    speak("Welcome ")
     speak(uname)
     columns = shutil.get_terminal_size().columns
      
@@ -190,7 +190,7 @@ if __name__ == "__main__":
 #             speak(f"Sir, the time is {strTime}")
  
 #         elif 'open opera' in query:
-#             codePath = r"C:\\Users\\GAURAV\\AppData\\Local\\Programs\\Opera\\launcher.exe"
+#             codePath = r"C:\\Users\\......"
 #             os.startfile(codePath)
  
 
@@ -271,7 +271,7 @@ if __name__ == "__main__":
 #             speak("Background changed successfully")
  
 #         elif 'open bluestack' in query:
-#             appli = r"C:\\ProgramData\\BlueStacks\\Client\\Bluestacks.exe"
+#             appli = r"C:\\ProgramData\\......."
 #             os.startfile(appli)
  
 #         elif 'news' in query:
@@ -321,7 +321,7 @@ if __name__ == "__main__":
 #             webbrowser.open("https://www.google.nl / maps / place/" + location + "")
  
 #         elif "camera" in query or "take a photo" in query:
-#             ec.capture(0, "Jarvis Camera ", "img.jpg")
+#             ec.capture(0, "Daisy 1 point o Camera ", "img.jpg")
  
 #         elif "restart" in query:
 #             subprocess.call(["shutdown", "/r"])
@@ -370,10 +370,10 @@ if __name__ == "__main__":
 #                       Pypdf.write(ch)
                      
 #         # NPPR9-FWDCX-D2C8J-H872K-2YT43
-#         elif "jarvis" in query:
+#         elif "daisy" in query:
              
 #             wishMe()
-#             speak("Jarvis 1 point o in your service Mister")
+#             speak("Daisy 1 point o in your service ")
 #             speak(assname)
  
 #         elif "weather" in query:
@@ -421,7 +421,7 @@ if __name__ == "__main__":
  
 #         elif "Good Morning" in query:
 #             speak("A warm" +query)
-#             speak("How are you Mister")
+#             speak("How are you ")
 #             speak(assname)
  
 #         # most asked question from google Assistant
@@ -442,8 +442,8 @@ if __name__ == "__main__":
 #             res = client.query(query)
              
 #             try:
-#                 print (next(res.results).text)
-#                 speak (next(res.results).text)
+#                 print(next(res.results).text)
+#                 speak(next(res.results).text)
 #             except StopIteration:
 #                 print ("No results")
  
