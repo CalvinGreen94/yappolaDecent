@@ -121,7 +121,7 @@ def answer():
 	#
 	while True:
 		try:
-			app_id = "5PL6G8-KRH7PUAAH5"
+            app_id = "5PL6G8-KRH7PUAAH5"
 			client = wolframalpha.Client(app_id)
 			res = client.query(command)
 			answers = next(res.results).text 
@@ -129,13 +129,13 @@ def answer():
 			voice = speak("The answer is "+answers)
 		except:
 			try:
-					command=command.split(' ')
-					command = command.join(command[2:]) #input[2:]
-					answers = wikipedia.summary(command) 
-					voice = speak("Searching for Command "+command)
-				except:
-					answers = 'I dont know the answer' 
-					voice = speak(answers)
+                command=command.split(' ')
+				command = command.join(command[2:]) #input[2:]
+				answers = wikipedia.summary(command) 
+				voice = speak("Searching for Command "+command)
+			except:
+                answers = 'I dont know the answer' 
+				voice = speak(answers)
 		break
 	return render_template('command.html',answers=answers) #files=files,url=url filename=filename
 
@@ -145,7 +145,7 @@ def answer():
 # # 	return render_template('command.html')#code=301
 
 if __name__ == "__main__":
-	app.run(debug=True,host="127.0.0.1",port=8888)
+    app.run(debug=True,host="127.0.0.1",port=8888)
 	clear = lambda: os.system('cls')
 	wishMe()
 	usrname()
