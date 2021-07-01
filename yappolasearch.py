@@ -109,16 +109,7 @@ def command():
 
 @app.route('/answer', methods=['POST'])
 def answer():
-	# if command == "who are you":
-	#     answer = ("I am yappola \_(^^)_/")
-	#     return render_template('command.html',answer=answer)
-
-
-
-
-
-
-	command=request.form['Talk to yappola:']
+        command=request.form['Talk to yappola:']
 	#
 	while True:
 		try:
