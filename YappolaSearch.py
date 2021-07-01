@@ -117,7 +117,7 @@ def answer():
 
 
 
-	command=request.form['Talk to yappola:']
+	command=request.form['Search ...']
 	#
 	while True:
 		try:
