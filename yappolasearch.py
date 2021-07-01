@@ -95,7 +95,7 @@ def takeCommand():
   
     except Exception as e:
         print(e)   
-        print("Unable to Recognize your voice.") 
+        print("Unable to Recognize your voice. Try again") 
         return "None"
      
     return query
