@@ -60,7 +60,7 @@ print('current half day turnover {} \n\n\n\n'.format(cntr.functions.getCurrentHa
 # for f in cntr.functions:
 #     print(f) 
 
-print('User Investing: {} '.format(cntr.functions.invest('T')))
+print('User Investing: {} '.format(cntr.functions.invest('')))
 
 # print('User Stats: {} '.format(cntr.functions.getUserStats('')))
 # print('percent rate: {:2f}%'.format(cntr.functions.getUserPercentRate(''))) 
