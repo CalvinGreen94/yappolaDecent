@@ -145,7 +145,7 @@ def answer():
 # # 	return render_template('command.html')#code=301
 
 if __name__ == "__main__":
-    app.run(debug=True,host="127.0.0.1",port=8888)
+    app.run(debug=True,host="127.0.0.1",port=8679)
 	clear = lambda: os.system('cls')
 	wishMe()
 	usrname()
