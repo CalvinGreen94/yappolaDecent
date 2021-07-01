@@ -7,10 +7,10 @@ contract YAPPOLA_COIN_ICO{
     
     
     //INTRODUCING TOTAL YAPPOLA COINS FOR SALE 
-    uint public max_YAPPOLAcoins = 19700905;
+    uint public max_YAPPOLAcoins = 1999999;
     
     // INTRODUCING USD TO YAPPOLA CONVERSION RATE 
-    uint public usd_to_YAPPOLAcoins = 1970; 
+    uint public usd_to_YAPPOLAcoins = 1999; 
     
     //INTRODUCING TOTAL NUMBER OF YAPPOLA COINS BOUGHT BY INVESTORS
     uint public total_YAPPOLAcoins_bought = 0; 
@@ -39,13 +39,13 @@ contract YAPPOLA_COIN_ICO{
     can_buy_YAPPOLAcoins(usd_invested){
         uint YAPPOLAcoins_bought= usd_invested * usd_to_YAPPOLAcoins;
         equity_YAPPOLAcoins[investor] += YAPPOLAcoins_bought; 
-        equity_usd[investor] = equity_YAPPOLAcoins[investor]/ 1099; 
+        equity_usd[investor] = equity_YAPPOLAcoins[investor]/ 1999; 
         total_YAPPOLAcoins_bought += YAPPOLAcoins_bought;
     }
     //SELLING YAPPOLACOINS
     function sell_YAPPOLAcoins(address investor, uint YAPPOLAcoins_sold) external{
         equity_YAPPOLAcoins[investor] -= YAPPOLAcoins_sold; 
-        equity_usd[investor] = equity_YAPPOLAcoins[investor]/ 1099; 
+        equity_usd[investor] = equity_YAPPOLAcoins[investor]/ 1999; 
         total_YAPPOLAcoins_bought -= YAPPOLAcoins_sold;
     }
 }
