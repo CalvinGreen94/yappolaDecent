@@ -48,6 +48,7 @@ pub_key ='pk_live_2pO0yUvt9xKyjAo9rca8Vkc600FWtgJuqZ'
 def speak(audio):
     engine.say(audio)
     engine.runAndWait()
+app_id = "5PL6G8-KRH7PUAAH5"
 @app.route('/wishMe')
 def wishMe():
     hour = int(datetime.datetime.now().hour)
@@ -180,7 +181,7 @@ if __name__ == "__main__":
  #        elif 'play music' in query or "play song" in query:
  #            speak("Here you go with music")
  #            # music_dir = "G:\\Song"
- #            music_dir = "C:\\Users\\GAURAV\\Music"
+ #            music_dir = "C:\\Users\\...\\Music"
  #            songs = os.listdir(music_dir)
  #            print(songs)   
  #            random = os.startfile(os.path.join(music_dir, songs[1]))
@@ -190,14 +191,14 @@ if __name__ == "__main__":
  #            speak(f"Sir, the time is {strTime}")
  
  #        elif 'open opera' in query:
- #            codePath = r"C:\\Users\\GAURAV\\AppData\\Local\\Programs\\Opera\\launcher.exe"
+ #            codePath = r"C:\\Users\\....."
  #            os.startfile(codePath)
  
 
  
  #        elif 'how are you' in query:
  #            speak("I am fine, Thank you")
- #            speak("How are you, Sir")
+ #            speak("How are you,")
  
  #        elif 'fine' in query or "good" in query:
  #            speak("It's good to know that your fine")
@@ -207,7 +208,7 @@ if __name__ == "__main__":
  #            assname = query
  
  #        elif "change name" in query:
- #            speak("What would you like to call me, Sir ")
+ #            speak("What would you like to call me")
  #            assname = takeCommand()
  #            speak("Thanks for naming me")
  
@@ -221,14 +222,14 @@ if __name__ == "__main__":
  #            exit()
  
  #        elif "who made you" in query or "who created you" in query:
- #            speak("I have been created by Gaurav.")
+ #            speak("I have been created by Yappola.")
              
  #        elif 'joke' in query:
  #            speak(pyjokes.get_joke())
              
  #        elif "calculate" in query:
              
- #            app_id = "Wolframalpha api id"
+ #            
  #            client = wolframalpha.Client(app_id)
  #            indx = query.lower().split().index('calculate')
  #            query = query.split()[indx + 1:]
@@ -251,17 +252,17 @@ if __name__ == "__main__":
  
  #        elif 'power point presentation' in query:
  #            speak("opening Power Point presentation")
- #            power = r"C:\\Users\\GAURAV\\Desktop\\Minor Project\\Presentation\\Voice Assistant.pptx"
+ #            power = r"C:\\Users\\..."
  #            os.startfile(power)
  
  #        elif 'is love' in query:
  #            speak("It is 7th sense that destroy all other senses")
  
  #        elif "who are you" in query:
- #            speak("I am your virtual assistant created by Gaurav")
+ #            speak("I am your virtual assistant created by Yappola")
  
  #        elif 'reason for you' in query:
- #            speak("I was created as a Minor project by Mister Gaurav ")
+ #            speak("I was created as to enhance NLP by Yappola ")
  
  #        elif 'change background' in query:
  #            ctypes.windll.user32.SystemParametersInfoW(20,
@@ -271,28 +272,9 @@ if __name__ == "__main__":
  #            speak("Background changed successfully")
  
  #        elif 'open bluestack' in query:
- #            appli = r"C:\\ProgramData\\BlueStacks\\Client\\Bluestacks.exe"
+ #            appli = r"C:\\ProgramData\\....."
  #            os.startfile(appli)
  
- #        elif 'news' in query:
-             
- #            try:
- #                jsonObj = urlopen('''https://newsapi.org / v1 / articles?source = the-times-of-india&sortBy = top&apiKey =\\times of India Api key\\''')
- #                data = json.load(jsonObj)
- #                i = 1
-                 
- #                speak('here are some top news from the times of india')
- #                print('''=============== TIMES OF INDIA ============'''+ '\n')
-                 
- #                for item in data['articles']:
-                     
- #                    print(str(i) + '. ' + item['title'] + '\n')
- #                    print(item['description'] + '\n')
- #                    speak(str(i) + '. ' + item['title'] + '\n')
- #                    i += 1
- #            except Exception as e:
-                 
- #                print(str(e))
  
          
  #        elif 'lock window' in query:
@@ -349,11 +331,6 @@ if __name__ == "__main__":
  #            else:
  #                file.write(note)
          
- #        elif "show note" in query:
- #            speak("Showing Notes")
- #            file = open("jarvis.txt", "r")
- #            print(file.read())
- #            speak(file.read(6))
  
  #        elif "update assistant" in query:
  #            speak("After downloading file please replace this file with the downloaded one")
@@ -370,10 +347,10 @@ if __name__ == "__main__":
  #                      Pypdf.write(ch)
                      
  #        # NPPR9-FWDCX-D2C8J-H872K-2YT43
- #        elif "jarvis" in query:
+ #        elif "daisy" in query:
              
  #            wishMe()
- #            speak("Jarvis 1 point o in your service Mister")
+ #            speak("Yappola 1 point o in your service")
  #            speak(assname)
  
  #        elif "weather" in query:
@@ -401,21 +378,7 @@ if __name__ == "__main__":
  #            else:
  #                speak(" City Not Found ")
              
- #        elif "send message " in query:
- #                # You need to create an account on Twilio to use this service
- #                account_sid = 'Account Sid key'
- #                auth_token = 'Auth token'
- #                client = Client(account_sid, auth_token)
- 
- #                message = client.messages \
- #                                .create(
- #                                    body = takeCommand(),
- #                                    from_='Sender No',
- #                                    to ='Receiver No'
- #                                )
- 
- #                print(message.sid)
- 
+
  #        elif "wikipedia" in query:
  #            webbrowser.open("wikipedia.com")
  
@@ -429,7 +392,7 @@ if __name__ == "__main__":
  #            speak("I'm not sure about, may be you should give me some time")
  
  #        elif "how are you" in query:
- #            speak("I'm fine, glad you me that")
+ #            speak("I'm fine, glad you asked me that")
  
  #        elif "i love you" in query:
  #            speak("It's hard to understand")
@@ -438,16 +401,13 @@ if __name__ == "__main__":
              
  #            # Use the same API key
  #            # that we have generated earlier
- #            client = wolframalpha.Client("API_ID")
+ #            client = wolframalpha.Client(app_id)
  #            res = client.query(query)
              
  #            try:
- #                print (next(res.results).text)
- #                speak (next(res.results).text)
+ #                print(next(res.results).text)
+ #                speak(next(res.results).text)
  #            except StopIteration:
  #                print ("No results")
  
- #        # elif "" in query:
- #        #     Command go here
- #        #     For adding more commands
-	
+ 
