@@ -109,16 +109,16 @@ def command():
 
 @app.route('/answer', methods=['POST'])
 def answer():
-        command=request.form['Talk to yappola:']
+    command=request.form['Talk to yappola:']
 	#
-	while True:
+        while True:
 		try:
-			app_id = "5PL6G8-KRH7PUAAH5"
-			client = wolframalpha.Client(app_id)
-			res = client.query(command)
-			answers = next(res.results).text 
-			answers = str(answers) 
-			voice = speak("The answer is "+answers)
+		    app_id = "5PL6G8-KRH7PUAAH5"
+		    client = wolframalpha.Client(app_id)
+	            res = client.query(command)
+		    answers = next(res.results).text 
+		    answers = str(answers) 
+		    voice = speak("The answer is "+answers)
 		except:
 				try:
 					command=command.split(' ')
