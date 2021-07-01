@@ -33,14 +33,14 @@ class yappolaBlockchain:
 		from urllib.request import urlopen
 		from bs4 import BeautifulSoup as soup
 		import random
-		my_url = 'http://../'
+		my_url = 'http://http://54.163.150.45/'
 		#opening up connection, downloading the page
-		html_page = requests.get('http://../')
+		html_page = requests.get('http://http://54.163.150.45/)
 		soup = soup(html_page.content, 'html.parser')
-		warning = soup.find('div', class_="lister-item mode-detail")
+		warning = soup.find('div', class_="image-part")
 		images = warning.findAll('img')
 		image = images
-		image = str('http://../{}'.format(image[0:]))
+		image = str('http://http://54.163.150.45/'.format(image[0:]))
 
 		mint_acct ='' #<= input acct address 
 		mint_key = '' #<= input acct priv. key	
