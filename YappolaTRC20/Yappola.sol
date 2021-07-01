@@ -16,7 +16,7 @@ contract Yappola is ERC20, ERC20Detailed {
     /**
      * @dev Constructor that gives msg.sender all of existing tokens.
      */
-    constructor () public ERC20Detailed("Yappola", "LFR", 6) {
+    constructor () public ERC20Detailed("Yappola", "YPC", 6) {
         _mint(msg.sender, 1999999 * (10 ** uint256(decimals())));
     }
 }
