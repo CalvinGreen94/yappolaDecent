@@ -45,6 +45,7 @@ daisy = 'dAIsy'
 app = Flask(__name__)
 app.secret_key = "You Come t0 m3 0n th3 dai 0f mah dAUghterZZzz wedDinng BITCH!"
 pub_key ='pk_live_2pO0yUvt9xKyjAo9rca8Vkc600FWtgJuqZ'
+app_id = "5PL6G8-KRH7PUAAH5"
 def speak(audio):
     engine.say(audio)
     engine.runAndWait()
