@@ -128,7 +128,7 @@ def answer():
 			answers = str(answers) 
 			voice = speak("The answer is "+answers)
 		except:
-				try:
+			try:
 					command=command.split(' ')
 					command = command.join(command[2:]) #input[2:]
 					answers = wikipedia.summary(command) 
@@ -148,6 +148,6 @@ if __name__ == "__main__":
 	app.run(debug=True,host="127.0.0.1",port=8888)
 	clear = lambda: os.system('cls')
 	wishMe()
-  usrname()
+	usrname()
      
  
